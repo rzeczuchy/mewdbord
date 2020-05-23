@@ -1,0 +1,15 @@
+.mewd {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.mewd-image {
+  width: 100%;
+  height: auto;
+  transition: transform .1s;
+}
+
+.mewd-image:hover {
+  transform: scale(1.1);
+}
