@@ -10,12 +10,14 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar className="main-nav" variant="dark">
+        <Navbar className="main-nav" fixed="top" variant="dark">
           <Navbar.Brand className="nav-brand" href="#home">Mewdbord</Navbar.Brand>
         </Navbar>
       </header>
-      <Title mewdCount={mewdList.length} />
-      <MewdGrid list={mewdList} />
+      <section className="main-content">
+        <Title mewdCount={mewdList.length} />
+        <MewdGrid list={mewdList} />
+      </section>
     </div>
   );
 }
