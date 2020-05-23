@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { MewdGrid } from './components';
+import { MewdGrid, Title } from './components';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const mewdList = new Array(20).fill(null);
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
           <Navbar.Brand className="nav-brand" href="#home">Mewdbord</Navbar.Brand>
         </Navbar>
       </header>
-      <MewdGrid />
+      <Title mewdCount={mewdList.length} />
+      <MewdGrid list={mewdList} />
     </div>
   );
 }

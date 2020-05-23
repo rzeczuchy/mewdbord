@@ -1,0 +1,15 @@
+.title-container {
+  margin: 25px;
+  font-weight: lighter;
+}
+
+.title-container h1 {
+  display: inline;
+  font-weight: lighter;
+}
+
+.title-container p {
+  color: #b1b1b1;
+  display: inline;
+  padding: 0 10px;
+}

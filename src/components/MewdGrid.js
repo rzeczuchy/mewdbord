@@ -4,9 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const list = new Array(20).fill(null);
-
-const MewdGrid = () => {
+const MewdGrid = ({list}) => {
   useEffect(() => {
     const callback = event => {
       // handle scroll here

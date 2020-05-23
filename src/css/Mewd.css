@@ -5,11 +5,12 @@
 }
 
 .mewd-image {
-  width: 100%;
-  height: auto;
-  transition: transform .1s;
+  background-size: cover;
+  width: 105%;
+  height: 105%;
+  transition: transform .5s ease;
 }
 
 .mewd-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
