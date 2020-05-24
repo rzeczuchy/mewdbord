@@ -1,12 +1,13 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import '../css/Title.css';
 
 const Title = ({mewdCount}) => {
   return (
     <div className="title-container">
       <h1>my board</h1>
-      <p>added {mewdCount} mewds</p>
+      <p>{mewdCount} mewds</p>
+      <Button className="add-button" variant="outline-success" data-hover="ADD" data-idle="+"></Button>
     </div>
   )
 }

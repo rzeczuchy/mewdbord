@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar className="main-nav" fixed="top" variant="dark">
+        <Navbar fixed="top" variant="dark" bg="dark">
           <Navbar.Brand className="nav-brand" href="#home">Mewdbord</Navbar.Brand>
         </Navbar>
       </header>

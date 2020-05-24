@@ -17,7 +17,7 @@ const MewdGrid = ({list}) => {
   return (
     <div>
       <Container fluid>
-        <Row>
+        <Row className="no-gutters">
           {list.map((value, i) => {
             return (
               <Col sm={6} md={4} xl={3} key={i}>

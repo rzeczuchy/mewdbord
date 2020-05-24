@@ -3,13 +3,34 @@
   font-weight: lighter;
 }
 
-.title-container h1 {
+h1 {
   display: inline;
-  font-weight: lighter;
 }
 
 .title-container p {
   color: #b1b1b1;
   display: inline;
   padding: 0 10px;
+}
+
+.title-container .add-button {
+  position: absolute;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+  border-radius: 25px;
+  transition: width .5s ease-in-out;
+}
+
+.title-container .add-button:hover {
+  width: 80px;
+}
+
+.title-container .add-button:before {
+  content: attr(data-idle);
+}
+
+.title-container .add-button:hover:before {
+  content: attr(data-hover);
 }
