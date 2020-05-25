@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const MewdGrid = ({list}) => {
+const MewdGrid = ({mewdList}) => {
   useEffect(() => {
     const callback = event => {
       // handle scroll here
@@ -18,10 +18,10 @@ const MewdGrid = ({list}) => {
     <div>
       <Container fluid>
         <Row className="no-gutters">
-          {list.map((value, i) => {
+          {mewdList.map((value, i) => {
             return (
               <Col sm={6} md={4} xl={3} key={i}>
-                <Mewd key={i}/>
+                <Mewd key={i} imgSrc={mewdList[i]} />
               </Col>
             );
           })}
