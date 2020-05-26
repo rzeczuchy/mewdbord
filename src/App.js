@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header>
         <Navbar fixed="top" variant="dark" bg="dark">
-          <Navbar.Brand className="nav-brand" href="#home">Mewdbord</Navbar.Brand>
+          <Navbar.Brand className="nav-brand" href="#">Mewdbord</Navbar.Brand>
         </Navbar>
       </header>
       <section className="main-content">
