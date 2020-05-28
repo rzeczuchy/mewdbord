@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import Mewd from './Mewd';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, { useEffect } from "react";
+import Mewd from "./Mewd";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const MewdGrid = (props) => {
   useEffect(() => {
-    const callback = event => {
+    const callback = (event) => {
       // handle scroll here
     };
 
@@ -29,6 +29,6 @@ const MewdGrid = (props) => {
       </Container>
     </div>
   );
-}
+};
 
 export default MewdGrid;

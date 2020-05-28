@@ -1,9 +1,8 @@
 import React from "react";
-import AddMewdButton from './AddMewdButton';
-import '../css/Title.css';
+import AddMewdButton from "./AddMewdButton";
+import "../css/Title.css";
 
 const Title = (props) => {
-
   return (
     <>
       <div className="title-container">
@@ -12,7 +11,7 @@ const Title = (props) => {
         <AddMewdButton />
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Title;

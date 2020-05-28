@@ -1,7 +1,7 @@
 import React from "react";
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function addMewd(url) {
   console.log("Tried to add URL.");
@@ -16,9 +16,7 @@ const AddMewdModal = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Add mewd
-        </Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Add mewd</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>
@@ -29,10 +27,12 @@ const AddMewdModal = (props) => {
             </Form.Text>
           </Form.Group>
         </Form>
-        <Button onClick={props.onHide} variant="success">Add</Button>
+        <Button onClick={props.onHide} variant="success">
+          Add
+        </Button>
       </Modal.Body>
     </Modal>
   );
-}
+};
 
 export default AddMewdModal;
