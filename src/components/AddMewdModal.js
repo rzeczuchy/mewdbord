@@ -9,14 +9,9 @@ function addMewd(url) {
 
 const AddMewdModal = (props) => {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
+    <Modal {...props} size="lg" aria-labelledby="add-mewd-modal" centered>
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Add mewd</Modal.Title>
+        <Modal.Title id="add-mewd-modal">Add mewd</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>

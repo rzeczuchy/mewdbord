@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import { MewdGrid, Title } from "./components";
+import { MewdGrid, TitleArea, TopNav } from "./components";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,14 +11,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar fixed="top" variant="dark" bg="dark">
-          <Navbar.Brand className="nav-brand" href="#">
-            Mewdbord
-          </Navbar.Brand>
-        </Navbar>
+        <TopNav />
       </header>
       <section className="main-content">
-        <Title mewdCount={mewdList.length} />
+        <TitleArea mewdCount={mewdList.length} />
         <MewdGrid mewdList={mewdList} />
       </section>
     </div>

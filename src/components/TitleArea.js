@@ -1,6 +1,6 @@
 import React from "react";
 import AddMewdButton from "./AddMewdButton";
-import "../css/Title.css";
+import "../css/TitleArea.css";
 
 const Title = (props) => {
   return (
