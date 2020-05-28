@@ -18,7 +18,6 @@ function App() {
         <MewdGrid mewdList={mewdList} />
       </section>
       <footer>
-        // footer goes here
       </footer>
     </div>
   );
