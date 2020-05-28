@@ -2,7 +2,7 @@ import React from "react";
 import AddMewdButton from "./AddMewdButton";
 import "../css/TitleArea.css";
 
-const Title = (props) => {
+const TitleArea = (props) => {
   return (
     <>
       <div className="title-container">
@@ -14,4 +14,4 @@ const Title = (props) => {
   );
 };
 
-export default Title;
+export default TitleArea;

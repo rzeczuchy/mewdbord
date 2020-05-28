@@ -17,6 +17,9 @@ function App() {
         <TitleArea mewdCount={mewdList.length} />
         <MewdGrid mewdList={mewdList} />
       </section>
+      <footer>
+        // footer goes here
+      </footer>
     </div>
   );
 }
