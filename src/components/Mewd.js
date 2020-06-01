@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "react-bootstrap/Image";
 import MewdLightbox from "./MewdLightbox";
 import "../css/Mewd.css";
 
 const Mewd = (props) => {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <div className="mewd">

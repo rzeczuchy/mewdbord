@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import AddMewdModal from "./AddMewdModal";
 
 const AddMewdButton = (props) => {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <>
@@ -14,7 +14,11 @@ const AddMewdButton = (props) => {
         data-hover="ADD"
         data-idle="+"
       />
-      <AddMewdModal show={modalShow} onHide={() => setModalShow(false)} />
+      <AddMewdModal
+        onAdd={props.onAdd}
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </>
   );
 };
