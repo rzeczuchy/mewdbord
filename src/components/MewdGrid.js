@@ -12,7 +12,12 @@ const MewdGrid = (props) => {
           {props.sources.map((value, i) => {
             return (
               <Col sm={6} md={4} lg={3} xl={2} key={i}>
-                <Mewd key={i} imgSrc={props.sources[i]} />
+                <Mewd
+                  key={i}
+                  id={i}
+                  imgSrc={props.sources[i]}
+                  onDelete={props.onDelete}
+                />
               </Col>
             );
           })}

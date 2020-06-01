@@ -12,7 +12,7 @@ const AddMewdButton = (props) => {
         className="add-button"
         variant="outline-success"
         data-hover="ADD"
-        data-idle="+"
+        data-idle="➕"
       />
       <AddMewdModal
         onAdd={props.onAdd}

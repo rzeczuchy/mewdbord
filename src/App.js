@@ -16,6 +16,14 @@ function App() {
     });
   }
 
+  function deleteMewd(id) {
+    setSources((prevSources) => {
+      return prevSources.filter((mewd, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div className="App">
       <header>
@@ -23,7 +31,7 @@ function App() {
       </header>
       <section className="main-content">
         <TitleArea mewdCount={sources.length} onAdd={addMewd} />
-        <MewdGrid sources={sources} />
+        <MewdGrid onDelete={deleteMewd} sources={sources} />
       </section>
       <footer></footer>
     </div>
