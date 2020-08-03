@@ -1,14 +1,31 @@
 import React, { useState } from "react";
-import { MewdGrid, TitleArea, TopNav } from "./components";
+import { MewdGrid, TitleArea, TopNav, FooterBar } from "./components";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const getSources = () => {
+  const sources = [];
+  sources.push("https://source.unsplash.com/whDrFMucHkc/800x800");
+  sources.push("https://source.unsplash.com/-hI5dX2ObAs/800x800");
+  sources.push("https://source.unsplash.com/rTZW4f02zY8/800x800");
+  sources.push("https://source.unsplash.com/WKT3TE5AQu0/800x800");
+  sources.push("https://source.unsplash.com/5e9CmF-Ge9Y/800x800");
+  sources.push("https://source.unsplash.com/OLlj17tUZnU/800x800");
+  sources.push("https://source.unsplash.com/kDsNr-vu7ms/800x800");
+  sources.push("https://source.unsplash.com/U2uKrI4lci8/800x800");
+  sources.push("https://source.unsplash.com/6-jTZysYY_U/800x800");
+  sources.push("https://source.unsplash.com/fDSqEWLRNFE/800x800");
+  sources.push("https://source.unsplash.com/CzigtQ8gPi4/800x800");
+  sources.push("https://source.unsplash.com/_SFJhRPzJHs/800x800");
+  sources.push("https://source.unsplash.com/HWIOLU7_O6w/800x800");
+  sources.push("https://source.unsplash.com/pd4lo70LdbI/800x800");
+  sources.push("https://source.unsplash.com/Q1p7bh3SHj8/800x800");
+
+  return sources;
+};
+
 function App() {
-  const [sources, setSources] = useState(
-    new Array(20).fill(
-      "https://user-images.githubusercontent.com/57368722/82800188-8c494700-9e7b-11ea-9a07-7cbabd1f3335.jpg"
-    )
-  );
+  const [sources, setSources] = useState(getSources());
 
   function addMewd(source) {
     setSources((prevSources) => {
@@ -30,10 +47,16 @@ function App() {
         <TopNav />
       </header>
       <section className="main-content">
-        <TitleArea mewdCount={sources.length} onAdd={addMewd} />
+        <TitleArea
+          boardTitle={"Space"}
+          mewdCount={sources.length}
+          onAdd={addMewd}
+        />
         <MewdGrid onDelete={deleteMewd} sources={sources} />
       </section>
-      <footer></footer>
+      <footer>
+        <FooterBar />
+      </footer>
     </div>
   );
 }

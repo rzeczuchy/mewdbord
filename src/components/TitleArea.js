@@ -6,8 +6,8 @@ const TitleArea = (props) => {
   return (
     <>
       <div className="title-container">
-        <h1>my board</h1>
-        <p>{props.mewdCount} mewds</p>
+        <h1>{props.boardTitle}</h1>
+        <p>{props.mewdCount} images</p>
         <AddMewdButton onAdd={props.onAdd} />
       </div>
     </>
